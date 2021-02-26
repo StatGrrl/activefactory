@@ -312,10 +312,10 @@ img.demo {
 /********** X Small devices only **********/
 @media (max-width: 575px) {
   h1 {
-    font-size: 1.8em;
+    font-size: 1.6em;
   }
   p {
-    font-size: 1.5em;
+    font-size: 1.3em;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 0px;
