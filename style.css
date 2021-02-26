@@ -110,6 +110,7 @@ p {
   position: fixed;
   z-index: 1;
   padding-top: 70px;
+  padding-bottom: 120px;
   left: 0;
   top: 90px;
   width: 100%;
