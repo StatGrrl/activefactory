@@ -66,6 +66,7 @@ p {
 .text-col {
   height: 450px;
   position: relative;
+  padding: 0;
 }
 .text-box {
   text-align: center;
@@ -244,6 +245,10 @@ img.demo {
   p {
     font-size: 2em;
   }
+  .text-box {
+    padding: 100px;
+  } 
+
 }
 
 /********** X Large devices only **********/
@@ -265,6 +270,10 @@ img.demo {
   p {
     font-size: 1.8em;
   }
+  .text-box {
+    padding: 50px;
+  } 
+
 }
 
 /********** Large devices only **********/
@@ -275,6 +284,10 @@ img.demo {
   p {
     font-size: 2em;
   }
+  .text-box {
+    padding: 50px;
+  } 
+
 }
 
 /********** Medium devices only **********/
@@ -285,6 +298,9 @@ img.demo {
   p {
     font-size: 1.5em;
   }
+  .text-box {
+    padding: 50px;
+  } 
 }
 
 /********** Small devices only **********/
@@ -295,6 +311,9 @@ img.demo {
   p {
     font-size: 1.5em;
   }
+  .text-box {
+    padding: 30px;
+  } 
 }
 
 /********** X Small devices only **********/
@@ -305,9 +324,6 @@ img.demo {
   p {
     font-size: 1.2em;
   }
-  .text-box {
-    padding: 5px;
-  }  
   .text-col {
     height: 250px;
   }
