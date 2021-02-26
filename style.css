@@ -35,15 +35,16 @@ body {
   color: white;
 }
 .colour3 {
-  background-color:  rgba(38,178,71,1.0); 
+  background-color:  rgba(218,33,39,1.0); 
   color: white;
 }
 .colour4 {
-  background-color:  rgba(218,33,39,1.0); 
+  background-color:  rgba(38,178,71,1.0); 
   color: white;
 }
 .content {
   padding: 0px;
+  max-width: 2400px;
 }
 .navbar {
   border-bottom: 1px solid gray;
@@ -69,6 +70,15 @@ p {
 .text-col {
   text-align: center;
   padding: 60px;
+  height: 450px;
+  position: relative;
+}
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 .img-col {
   padding: 0;
@@ -80,6 +90,7 @@ p {
     width: 100%;
     height: auto;
     max-height: 450px;
+    max-width: 450px;
 }
 .cover-img {
   object-fit: cover;
@@ -94,12 +105,140 @@ p {
   padding: 30px 10px 30px 10px;
 }
 
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 70px;
+  left: 0;
+  top: 90px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+  background-color: black;
+}
+.slides {
+  padding: 0;
+  margin: 0 auto;
+  position: relative;
+  background-color: black;
+}
+.thumbs {
+  background-color: black;
+  padding: 0;
+}
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  text-decoration: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+#caption {
+  font-size: 12pt;
+}
+
+img.demo {
+  opacity: 0.6;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+
 /********** XX large devices only **********/
 @media (min-width: 1400px) {
   .center-img {
     max-height: 650px;
+    max-width: 650px;
   }
   .cover-img {
+    height: 650px;
+  }
+  .text-col {
     height: 650px;
   }
   h1 {
@@ -116,9 +255,13 @@ p {
 @media (min-width: 1200px) and (max-width: 1399px) {
   .center-img {
     max-height: 650px;
-    padding-top: 80px;
+    max-width: 650px;
+    
   }
   .cover-img {
+    height: 650px;
+  }
+  .text-col {
     height: 650px;
   }
   h1 {
@@ -158,10 +301,10 @@ p {
 /********** Small devices only **********/
 @media (min-width: 576px) and (max-width: 767px) {
   h1 {
-    font-size: 2.4em;
+    font-size: 2em;
   }
   p {
-    font-size: 1.2em;
+    font-size: 1.5em;
     padding-left: 25px;
     padding-right: 25px;
   }
@@ -179,6 +322,14 @@ p {
     padding-top: 0px;
   }
   .text-col {
-    padding: 30px
+    padding: 30px;
+    height: 250px;
+  }
+  .center-img {
+    max-height: 250px;
+    max-width: 250px;
+  }
+  .cover-img {
+    height: 250px;
   }
 }

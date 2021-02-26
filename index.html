@@ -10,38 +10,16 @@
 
   <!-- Edit title and content -->
   <title>Active Factory</title>
-  <meta name="description" content="Active Factory manufactures toilet seats and bathroom accessories that are distributed to leading retailers in South Africa." />
+  <meta name="description" content="Active Factory manufactures toilet seats and bathroom cabinets that are distributed to leading retailers in South Africa." />
   <meta name="keywords" content="toilet, seats, bathroom, accesories" />
 
-  <!-- SOCIAL MEDIA SHARING -->
-  <!-- Generate social media meta tags https://metatags.io/ -->
-
-    <!-- Edit twitter content -->
-    <!-- Twitter image spec 2:1, min 300x157 px, max 4096x4096 px, max 5 Mb, jpg/png) -->
-    <!-- Twitter validation - https://cards-dev.twitter.com/validator -->
-  <!--
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@SiteTwitterHandle" />
-    <meta name="twitter:creator" content="@AuthorTwitterHandle" />
-    <meta name="twitter:description" content="Twitter description" />
-    <meta name="twitter:url" content="FullUrl" />
-    <meta name="twitter:title" content="Twitter title" />
-    <meta name="twitter:image" content="FullUrl/images/twitter.jpg" />
-    <meta name="twitter:image:alt" content="Description of image (max 420 char)" />
-  -->
-    <!-- Edit open graph content -->
-    <!-- Facebook & LinkedIn image spec (first image) 1.91:1, min 600x314 px, max 4096x4096 px, max 5 Mb, jpg/png) -->
-    <!-- WhatsApp image spec (last image) 1:1, min 300x300 px, max 300 Kb -->
-    <!-- Facebook validation - https://developers.facebook.com/tools/debug/ -->
-    <!-- LinkedIn validation https://www.linkedin.com/post-inspector/ -->
-  
-    <meta property="og:title" content="Active Factory" />
-    <meta property="og:url" content="https://statgrrl.github.io/activefactory/" />
-    <meta property="og:description" content="Active Factory is the leading manufacturer of toilet seats in SA" />
-    <meta property="og:type" content="website" />
-    <meta property="og:locale" content="en_GB" />
-<!--    <meta property="og:image" content="FullUrl/images/facebook.jpg" /> -->
-    <meta property="og:image" content="FullUrl/images/whatsapp.jpg" />
+  <!-- Whatsapp share-->
+  <meta property="og:title" content="Active Factory" />
+  <meta property="og:url" content="https://www.activefactory.co.za/" />
+  <meta property="og:description" content="Active Factory is the leading manufacturer of wooden toilet seats in SA" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_GB" />
+  <meta property="og:image" content="https://www.activefactory.co.za/images/whatsapp.jpg" />
 
   <!-- Generate favicons images and meta tags http://faviconit.com/en -->
   <link rel="shortcut icon" href="images/favicon/favicon.ico" />
@@ -66,14 +44,11 @@
   <meta name="msapplication-TileImage" content="images/favicon/favicon-144.png" />
   <meta name="msapplication-config" content="images/favicon/browserconfig.xml" />
 
-  <!-- STYLE SHEETS (delete or edit where necessary) -->
+  <!-- STYLE SHEETS -->
 
     <!-- Google fonts example https://fonts.google.com/ -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;800&display=swap" rel="stylesheet">
-
-    <!-- Font awesome icons https://fontawesome.com/icons -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" /> 
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
@@ -81,198 +56,347 @@
     <!-- Custom style file (edit file) -->
     <link rel="stylesheet" href="style.css" />
 
-    <!-- HTML5Shiv for internet explorer -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <![endif]-->
 </head>
 
 <body>
 
-  <nav class="navbar fixed-top navbar-light navbar-expand-md colour-nav p-0">
+  <nav class="navbar fixed-top navbar-light colour-nav p-0">
     <div class="container-fluid">
-    <a class="navbar-brand" href="#"><img src="images/logo.svg" alt="" height="80"/></a>
-    <div class="d-flex flex-row order-2 order-md-3">
-      <span class="navbar-text d-none d-sm-block">
-      <div><a class="contact-links" href="tel:+27126683216">
-        +27 12 668 3216 / 46</a></div>
-     <div style="padding-right: 20px;"><a class="contact-links" href="mailto:luke@activefactory.co.za" > 
-        luke@activefactory.co.za</a></div>  
-      </span>
-<!--
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    </div>
 
-    <div class="collapse navbar-collapse order-3 order-md-2" id="navbarNavDropdown">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Products</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">FAQ</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-    </div>
--->
-  </div>
-</nav>
-  
+      <a class="navbar-brand" href="#"><img src="images/logo.svg" alt="" height="80"/></a>
+
+      <button class="btn btn-sm btn-outline-secondary" type="button" onclick="openModal();currentSlide(1)">Gallery</button>
+
+      <div class="d-flex flex-row order-2">
+      
+          <span class="navbar-text d-none d-sm-block">
+            <div><a class="contact-links" href="tel:+27126683216">
+              +27 12 668 3216 / 46</a>
+            </div>
+            <div style="padding-right: 20px;"><a class="contact-links" href="mailto:luke@activefactory.co.za" > 
+              luke@activefactory.co.za</a>
+            </div>
+          </span>
+
+      </div> <!-- end row -->
+
+    </div> <!-- end container -->
+  </nav> <!-- end nav-->
+
+
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+      <div class="container slides d-none d-sm-block">
+        <div class="mySlides">
+          <div class="numbertext">1 / 8</div>
+          <img src="images/gallery/img1_wide.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 8</div>
+          <img src="images/gallery/img2_wide.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 8</div>
+          <img src="images/gallery/img3_wide.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 8</div>
+          <img src="images/gallery/img4_wide.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">5 / 8</div>
+          <img src="images/gallery/img5_wide.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">6 / 8</div>
+          <img src="images/gallery/img6_wide.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">7 / 8</div>
+          <img src="images/gallery/img7_wide.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">8 / 8</div>
+          <img src="images/gallery/img8_wide.jpg" style="width:100%">
+        </div>
+
+        <!-- Next/previous controls -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!-- Caption text 
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div> -->
+      </div> <!-- end slides container-->
+
+      <!-- Thumbnail image controls -->
+      <div class="container-fluid thumbs">
+        <div class="row">
+
+          <div class="col-sm-4 col-md-3">
+            <img class="demo" src="images/gallery/img1.jpg" onclick="currentSlide(1)" alt="Bathroom">
+          </div>
+
+          <div class="col-sm-4 col-md-3 ">
+            <img class="demo" src="images/gallery/img2.jpg" onclick="currentSlide(2)" alt="Factory">
+          </div>
+
+          <div class="col-sm-4 col-md-3 ">
+            <img class="demo" src="images/gallery/img3.jpg" onclick="currentSlide(3)" alt="Family">
+          </div>
+
+          <div class="col-sm-4 col-md-3 ">
+            <img class="demo" src="images/gallery/img4.jpg" onclick="currentSlide(4)" alt="Store">
+          </div>
+
+          <div class="col-sm-4 col-md-3 ">
+            <img class="demo" src="images/gallery/img5.jpg" onclick="currentSlide(5)" alt="Bathroom">
+          </div>
+
+          <div class="col-sm-4 col-md-3 ">
+            <img class="demo" src="images/gallery/img6.jpg" onclick="currentSlide(6)" alt="Factory">
+          </div>
+
+          <div class="col-sm-4 col-md-3 ">
+            <img class="demo" src="images/gallery/img7.jpg" onclick="currentSlide(7)" alt="Family">
+          </div>
+
+          <div class="col-sm-4 col-md-3 ">
+            <img class="demo" src="images/gallery/img8.jpg" onclick="currentSlide(8)" alt="Store">
+          </div>
+      
+        </div> <!-- end row-->
+      </div> <!-- end thumbs container-->
+    </div> <!-- end modal-content-->
+  </div> <!-- end modal-->
+
   <div class="container-fluid content">
     <div class="row">
-      <div class="col d-xl-none text-col">
+
+      <div class="col d-xl-none" style="text-align: center; padding: 70px">
         <h1>Manufactured<br>to last</h1>
         <p>Quality Toilet Seats</p>
       </div>
+
       <div class="col d-none d-xl-block" style="text-align: center; padding-top: 20px;">
         <h1>Manufactured to last</h1>
         <p>Quality Toilet Seats</p>
       </div>
-</div>
+
+    </div>
+
     <div class="row">
+
       <div class="col img-col">
-          <img src="images/bathroom.jpg" class="d-none d-xl-block cover-img">
-          <img src="images/bathroom_sm.jpg" class="d-none d-sm-block d-xl-none cover-img">
-          <img src="images/bathroom_xs.jpg" class="d-sm-none cover-img">
+        <img src="images/toilet_xl.jpg" class="d-none d-xl-block cover-img">
+        <img src="images/toilet_sm.jpg" class="d-none d-sm-block d-xl-none cover-img">
+        <img src="images/toilet_xs.jpg" class="d-sm-none cover-img">
       </div>
+
     </div>
+
     <div class="row">
+
       <div class="col text-col ">
-        <h1>SA's Largest Wooden Toilet Seat Producer</h1>
-        <p>Utilizing an improved and innovative manufacturing process,  our high quality toilet seats are distributed in over 200 retail outlets all over southern Africa.</p>
+        <div class="vertical-center">
+          <h1>SA's Largest Wooden Toilet Seat Producer</h1>
+          <p>Utilizing an improved and innovative manufacturing process,  our high quality toilet seats are distributed in over 200 retail outlets all over southern Africa.</p>
+        </div>
       </div>
+ 
     </div>
+ 
     <div class="row">
-      <div class="col-xxl-4 col-xl-6 img-col">
-        <img src="images/family_orig.jpg" class="d-none d-xl-block cover-img">
+ 
+      <div class="col-xl-6 img-col">
+        <img src="images/family_xl.jpg" class="d-none d-xl-block cover-img">
         <img src="images/family_sm.jpg" class="d-none d-sm-block d-xl-none cover-img">
         <img src="images/family_xs.jpg" class="d-sm-none cover-img">
-    </div>
-      <div class="col-xxl-8 col-xl-6 text-col  colour1">
-        <h1>Local Family Owned Company</h1>
-        <p>Quality, service and value are at the core of this family owned company.
-          <br>We are committed to these values and back all our products with a hassle free two year guarantee.</p>
+      </div>
+  
+      <div class="col-xl-6 text-col  colour1">
+        <div class="vertical-center">
+          <h1>Local Family Owned Company</h1>
+          <p>Quality, service and value are at the core of this family owned company. We are committed to these values and back all our products with a hassle free two year guarantee.</p>
         </div>
+      </div>
+  
     </div>
+
     <div class="row">
+
       <div class="col d-xl-none">
         <img src="images/colours.svg" class="center-img">
       </div>
+
       <div class="col-xl-6 text-col ">
+        <div class="vertical-center">
           <h1>Superior Finishing Process</h1>
           <p>Our seats are coated with multiple layers of paint and baked in an oven to ensure a hard, hygienic, long lasting, scratch resistant finish.</p>
+        </div>
       </div>
+
       <div class="col-xl-6 d-none d-xl-block">
         <img src="images/colours.svg" class="center-img">
       </div>
+
     </div>
+
     <div class="row">
+
       <div class="col-xl-6 img-col">
-        <img src="images/factory_sm.jpg" class="d-none d-sm-block cover-img">
+        <img src="images/factory_xl.jpg" class="d-none d-xl-block cover-img">
+        <img src="images/factory_sm.jpg" class="d-none d-sm-block d-xl-none cover-img">
         <img src="images/factory_xs.jpg" class="d-sm-none cover-img">
-    </div>
-      <div class="col-xl-6 text-col colour2">
-        <h1>Original Equipment Manufacturer</h1>
-        <p>We can take over at any stage in the design process to ensure that you get the best solution for your seat requirements. Creating either a contemporary or classic look, our seats will add value and complement the design of your pans. 
       </div>
-    </div>
-    <div class="row">
-      <div class="col d-xl-none">
-        <img src="images/hinge.jpg" class="d-none d-sm-block cover-img">
-        <img src="images/hinge_xs.jpg" class="d-sm-none cover-img">
+
+      <div class="col-xl-6 text-col colour2">
+        <div class="vertical-center">
+          <h1>Original Equipment Manufacturer</h1>
+          <p>We can take over at any stage in the design process to ensure that you get the best solution for your seat requirements. Creating either a contemporary or classic look, our seats will add value and complement the design of your pans. </p>
         </div>
-        <div class="col-xl-6 text-col ">
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col d-xl-none">
+        <img src="images/process.svg" class="center-img">
+      </div>
+
+      <div class="col-xl-6 text-col ">
+        <div class="vertical-center">
+          <h1>Production Process for Moulded Toilet Seats</h1>
+          <p>Our high-tech machinary is only part of the production picture that includes a top team consisting of 100 skilled staff members.</p>
+        </div>
+      </div>
+
+      <div class="col-xl-6 d-none d-xl-block ">
+        <img src="images/process.svg" class="center-img">
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-xl-6 img-col">
+        <img src="images/sawdust_xl.jpg" class="d-none d-xl-block cover-img">
+        <img src="images/sawdust_sm.jpg" class="d-none d-sm-block d-xl-none cover-img">
+        <img src="images/sawdust_xs.jpg" class="d-sm-none cover-img">
+      </div>
+
+      <div class="col-xl-6 text-col colour3">
+        <div class="vertical-center">
           <h1>Recycling Sawdust into Toilet Seats</h1>
           <p>The Active Factory is the only toilet seat manufacturer in South Africa using heat compression technology to turn sawdust into toilet seats.</p>
+        </div>
       </div>
-    <div class="col-xl-6 d-none d-xl-block">
-      <img src="images/hinge.jpg" class="cover-img">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-xl-6 img-col">
-        <img src="images/store_sm.jpg" class="d-none d-sm-block cover-img">
-        <img src="images/store_xs.jpg" class="d-sm-none cover-img">
-    </div>
-      <div class="col-xl-6 text-col colour3">
-        <h1>Production Process for Moulded Toilet Seats</h1>
-        <p>Our high-tech machinary is only part of the production picture that includes a top team consisting of 100 skilled staff members.</p>
-      </div>
+
     </div>
 
     <div class="row">
+
       <div class="col d-xl-none">
-        <img src="images/hinge.jpg" class="d-none d-sm-block cover-img">
-        <img src="images/hinge_xs.jpg" class="d-sm-none cover-img">
+        <img src="images/packaging.jpg" class="center-img">
+      </div>
+
+      <div class="col-xl-6 text-col ">
+        <div class="vertical-center">
+          <h1>Brands and Retailers</h1>
+          <p>Our toilet seats are available at most retail outlets. Builders Warehouse,  CTM, On tap and Plumblink are the larger retailers that stock our seats. Our toilet seats are sold under Active Factory and Builders Pride Brands.</p>
         </div>
-        <div class="col-xl-6 text-col ">
+      </div>
+  
+      <div class="col-xl-6 d-none d-xl-block">
+        <img src="images/packaging.jpg" class="center-img">
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-xl-6 img-col">
+        <img src="images/cabinet_xl.jpg" class="d-none d-xl-block cover-img">
+        <img src="images/cabinet_sm.jpg" class="d-none d-sm-block d-xl-none cover-img">
+        <img src="images/cabinet_xs.jpg" class="d-sm-none cover-img">
+      </div>
+
+      <div class="col-xl-6 text-col colour4">
+        <div class="vertical-center">
           <h1>We Make Cabinets Too</h1>
           <p>Our range of sprayed bathroom mirror cabinets is both stylish and functional.</p>
+        </div>
       </div>
-    <div class="col-xl-6 d-none d-xl-block">
-      <img src="images/hinge.jpg" class="cover-img">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-xl-6 img-col">
-        <img src="images/store_sm.jpg" class="d-none d-sm-block cover-img">
-        <img src="images/store_xs.jpg" class="d-sm-none cover-img">
-    </div>
-      <div class="col-xl-6 text-col colour4">
-        <h1>Brands and Retailers</h1>
-        <p>Our toilet seats are available at most retail outlets. Builders Warehouse,  CTM, On tap and Plumblink are the larger retailers that stock our seats. Our toilet seats are sold under Active Factory and Builders Pride Brands.</p>
-      </div>
+
     </div>
 
     <div class="row">
+
       <div class="col d-xl-none">
         <div class="map-responsive">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14357.270020102456!2d28.070071!3d-25.891931!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd2b4745b14e85d88!2sThe+Active+Factory!5e0!3m2!1sen!2sza!4v1550381218609" width="90%" height="400" frameborder="0" style="border:0; padding-top: 50px;" allowfullscreen class="mx-auto d-block"></iframe>
-				</div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14357.270020102456!2d28.070071!3d-25.891931!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd2b4745b14e85d88!2sThe+Active+Factory!5e0!3m2!1sen!2sza!4v1550381218609" width="90%" height="400" frameborder="0" style="border:0; padding-top: 50px;" allowfullscreen class="mx-auto d-block"></iframe>
+        </div>
       </div>
+
       <div class="col-xl-6 text-col ">
+        <div class="vertical-center">
           <h1>Contact Us</h1>
           <p>Give us a call and our friendly staff will be happy to assist with your enquiry. Factory visits are welcome by appointment only. We look forward to hearing from you!</p>
+        </div>
       </div>
+
       <div class="col-xl-6 d-none d-xl-block">
         <div class="map-responsive">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14357.270020102456!2d28.070071!3d-25.891931!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd2b4745b14e85d88!2sThe+Active+Factory!5e0!3m2!1sen!2sza!4v1550381218609" width="90%" height="600" frameborder="0" style="border:0; padding: 20px;" allowfullscreen class="mx-auto d-block"></iframe>
-				</div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14357.270020102456!2d28.070071!3d-25.891931!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd2b4745b14e85d88!2sThe+Active+Factory!5e0!3m2!1sen!2sza!4v1550381218609" width="90%" height="600" frameborder="0" style="border:0; padding: 20px;" allowfullscreen class="mx-auto d-block"></iframe>
+        </div>
       </div>
+
     </div>
+
   </div>
  
 	<footer class="panel-footer colour-ft">
 		<div class="container-fluid" style="padding: 0;">
-      		<div class="row">
-        		<div class="col  justify-content-center d-none d-sm-block">
-          			<span>Hours:</span>
+      <div class="row">
+
+        <div class="col  justify-content-center d-none d-sm-block">
+      		<span>Hours:</span>
 					<br>Mon-Fri: 7:30am - 4:30pm
 					<br>Sat, Sun: Closed
-        		</div>
-        		<div class="col  d-sm-none">
-              <div><a class="contact-links" style="color: white;" href="tel:+27126683216">
-                +27 12 668 3216 / 46</a></div>
-             <div><a class="contact-links" style="color: white;" href="mailto:luke@activefactory.co.za" > 
-                luke@activefactory.co.za</a></div>  
-        		</div>
-      		</div>
-    	</div>
+      	</div>
+
+        <div class="col  d-sm-none">
+          <div><a class="contact-links" style="color: white;" href="tel:+27126683216">+27 12 668 3216 / 46</a></div>
+          <div><a class="contact-links" style="color: white;" href="mailto:luke@activefactory.co.za" >luke@activefactory.co.za</a></div>  
+        </div>
+
+      </div>    
+    </div>
 	</footer>	
 
 <!-- SCRIPTS (delete or edit where necessary) -->
   <!-- Bootstrap Popper and JS plugins -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 
-  <!-- Custom script file (edit file) 
-  <script src="script.js"></script> -->
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Popper -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  
+  <!-- Custom script file (edit file) -->
+  <script src="script.js"></script> 
 
 </body>
 
