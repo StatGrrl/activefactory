@@ -334,4 +334,7 @@ img.demo {
   .cover-img {
     height: 250px;
   }
+  img.demo {
+    opacity: 1;
+  }  
 }
